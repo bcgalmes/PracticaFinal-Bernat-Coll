@@ -1,2 +1,8 @@
 /* CSS GRID */
 /* **************************************************************** */
+form, h2{
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 5px;
+    padding: 10px;
+}

@@ -15,4 +15,5 @@ a{
 /* Elimina las viñetas de las listas <ul> */
 ul{
     list-style-type: none;
+    padding-inline-start: 0;
 }

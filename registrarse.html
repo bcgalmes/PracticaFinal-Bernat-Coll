@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FutCOLL</title>
+    <title>FutCOLL - Registrarte</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
@@ -15,6 +15,7 @@
         <nav class="navMovil">
             <label class="boton" for="click"><img src="img/Smartphone/Icono_Menu.svg" alt=""></label>
                 <input class="pollo" type="checkbox" id="click">
+         
                     <ul class="menu">      
                         <li><a href="zonaVip.html">Zona VIP</a></li>
                         <li><a href="tuEquipo.html">Tu Equipo</a></li>
@@ -36,37 +37,27 @@
             </ul>
         </nav>
     </header> 
-    <main>
-      <picture>
-        <!-- smartphone -->
-        <source
-          srcset="
-            img/Smartphone/Estadio1.jpg,
-            img/Smartphone/Estadio1@2x.jpg,
-            img/Smartphone/Estadio1@3x.jpg
-          "
-          media="(min-width:300px) and (max-width:767px) and (orientation: portrait)"
-        />
-
-        <!-- ipad -->
-        <source
-          srcset="img\iPad\Estadio1.jpg, 
-          img\iPad\Estadio1@2x.jpg"
-          media="(min-width:768px) and (max-width:1023px)"
-        />
-
-        <!-- escritorio -->
-        <source
-          srcset="
-          img/desktop/Estadio1.jpg,
-          img/desktop/Estadio1@2x.jpg
-          "
-          media="(min-width:1024px)"
-        />
-
-        <!-- Etiqueta img -->
-        <img src="" alt="banner" />
-      </picture>
+    <main class="mainForm">
+        <form action="inicioSesion.html">
+            <h2><center>Registrase</center></h2>
+            <br><label class="label" for="Email">Nombre:</label><br>
+            <input id="nom" type="text" value="" required>
+            <br>
+            <br><label class="label" for="Contraseña">Apellidos:</label><br>
+            <input id="apell" type="text" value="" required>
+            <br>
+            <br><label class="label" for="Email">Email:</label><br>
+            <input id="email" type="email" value="" required>
+            <br>
+            <br><label class="label" for="Contraseña">Password:</label><br>
+            <input id="passwd" type="password" value="" required>
+            <br>
+            <br><label class="label" for="Contraseña">Repite Password:</label><br>
+            <input id="passwd2" type="password" value="" required>
+            <br><br>
+            <button class="boton_entrar" type="submit" value="Entrar">ENVIAR</button>
+           
+        </form>
     </main>
 </body>
 </html>

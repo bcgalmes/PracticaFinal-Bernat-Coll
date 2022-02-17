@@ -22,4 +22,11 @@
 /* *** Desktop *** */
 @media only screen and (min-width: 1100px){
     /* cambio de nav */
+    .navMovil{
+        display: none;
+    }
+
+    .navEscritorio{
+        display: flex;
+    }
 }

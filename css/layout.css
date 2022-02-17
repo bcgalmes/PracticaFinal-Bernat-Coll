@@ -1,4 +1,129 @@
 /* CSS LAYOUT */
 /* **************************************************************** */
 
+header{
+    padding: 0 20px;
+    height: 80px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #E02222;
+    background-color: white;
+    margin: 0;
+}
 
+h1{
+    font-size: 35px;
+    font-weight: bolder;
+    margin: 0;
+}
+
+a{
+    color:#E02222;
+    padding: 10px 0;
+    font-size: 24px;
+}
+
+.navMovil{
+    width: 100%;
+    margin: 0;
+}
+
+label.boton{
+    cursor: pointer;
+}
+
+ul.menu {
+    display: none;
+}
+
+.pollo{
+    display:none;
+}
+
+form{
+    width: 50%;
+}
+
+.mainForm{
+    display: flex;
+    justify-content: center;
+}
+
+input:checked ~ ul.menu {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    top: 64px;
+    background-color: #FF9B05;
+    height: calc(100vh - 80px);
+}
+
+li{
+    padding: 20px;
+}
+
+ul{
+    list-style-type: none;
+}
+
+input{
+    height: 50px;
+}
+
+.link_registrar{
+    background-color: #ffb785; /* Green */
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+}
+
+button {
+    background-color: #ffb785; /* Green */
+    border: none;
+    border-radius: 5px;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+}
+
+h2{
+    color:#FF9B05;
+}
+
+.botonRegistro, .botonInicio{
+    background-color: #E02222;
+    border: 2px solid black;
+    border-radius: 5px;
+    color: white;
+}
+
+.navEscritorio{
+   display: none;
+}
+
+.navEscritorio ul{
+    display: flex;
+}
+
+.navEscritorio a{
+    color: black;
+    font-size: 16px;
+}
+
+picture img{
+    width: 100%;
+}
