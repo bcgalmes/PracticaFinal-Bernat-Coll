@@ -1,63 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FutCOLL - Registrarte</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-    <header>
-        <a href="index.html"><img src="img/Smartphone/Logo_FutColl.svg" alt=""></a>
-        <h1 class="logotipo">FUTCOLL</a></h1>
-        <div>
-        <nav class="navMovil">
-            <label class="boton" for="click"><img src="img/Smartphone/Icono_Menu.svg" alt=""></label>
-                <input class="pollo" type="checkbox" id="click">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>FutCOLL - Registrarte</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <a href="index.html"><img src="img/Smartphone/Logo_FutColl.svg" alt=""></a>
+            <h1 class="logotipo">FUTCOLL</a></h1>
+            <div>
+            <nav class="navMovil">
+                <label class="boton" for="click"><img src="img/Smartphone/Icono_Menu.svg" alt=""></label>
+                    <input class="pollo" type="checkbox" id="click">
          
-                    <ul class="menu">      
-                        <li><a href="zonaVip.html">Zona VIP</a></li>
-                        <li><a href="tuEquipo.html">Tu Equipo</a></li>
-                        <li><a href="ligaSantander.html">Liga Santander</a></li>
-                        <li><a href="futbolMundial.html">Futbol Mundial</a></li>
-                        <li><a href="registrarse.html"><button class="botonRegistro">REGISTRARSE</button></a></li>
-                        <li><a href="inicioSesion.html"><button class="botonInicio">INICIO SESIÓN</button></a></li>
-                    </ul>
-            </div>
-        </nav>
-        <nav class="navEscritorio">
-            <ul>      
-                <li><a href="zonaVip.html">Zona VIP</a></li>
-                <li><a href="tuEquipo.html">Tu Equipo</a></li>
-                <li><a href="ligaSantander.html">Liga Santander</a></li>
-                <li><a href="futbolMundial.html">Futbol Mundial</a></li>
-                <li><a href="inicioSesion.html">Inicio de Sesión</a></li>
-                <li><a href="registrarse.html">Registrarse</a></li>
-            </ul>
-        </nav>
-    </header> 
-    <main class="mainForm">
-        <form action="inicioSesion.html">
-            <h2><center>Registrase</center></h2>
-            <br><label class="label" for="Email">Nombre:</label><br>
-            <input id="nom" type="text" value="" required>
-            <br>
-            <br><label class="label" for="Contraseña">Apellidos:</label><br>
-            <input id="apell" type="text" value="" required>
-            <br>
-            <br><label class="label" for="Email">Email:</label><br>
-            <input id="email" type="email" value="" required>
-            <br>
-            <br><label class="label" for="Contraseña">Password:</label><br>
-            <input id="passwd" type="password" value="" required>
-            <br>
-            <br><label class="label" for="Contraseña">Repite Password:</label><br>
-            <input id="passwd2" type="password" value="" required>
-            <br><br>
-            <button class="boton_entrar" type="submit" value="Entrar">ENVIAR</button>
+                        <ul class="menu">      
+                            <li><a href="zonaVip.html">Zona VIP</a></li>
+                            <li><a href="tuEquipo.html">Tu Equipo</a></li>
+                            <li><a href="ligaSantander.html">Liga Santander</a></li>
+                            <li><a href="futbolMundial.html">Futbol Mundial</a></li>
+                            <li><a href="registrarse.html"><button class="botonRegistro">REGISTRARSE</button></a></li>
+                            <li><a href="inicioSesion.html"><button class="botonInicio">INICIO SESIÓN</button></a></li>
+                        </ul>
+                </div>
+            </nav>
+            <nav class="navEscritorio">
+                <ul>      
+                    <li><a href="zonaVip.html">Zona VIP</a></li>
+                    <li><a href="tuEquipo.html">Tu Equipo</a></li>
+                    <li><a href="ligaSantander.html">Liga Santander</a></li>
+                    <li><a href="futbolMundial.html">Futbol Mundial</a></li>
+                    <li><a href="inicioSesion.html">Inicio de Sesión</a></li>
+                    <li><a href="registrarse.html">Registrarse</a></li>
+                </ul>
+            </nav>
+        </header> 
+        <main class="mainForm">
+            <form action="inicioSesion.html">
+                <h2><center>Registrase</center></h2>
+                <div class="formulario__grupo" id="grupo_nombre">
+                    <br><label class="label" for="Email">Nombre:</label><br>
+                    <input id="nombre" type="text" value="" required>
+                </div>
+
+                <br>
+
+                <div class="formulario__grupo" id="grupo_apellidos">
+                    <br><label class="label" for="Contraseña">Apellidos:</label><br>
+                    <input id="apellido" type="text" value="" required>
+                </div>
+
+                <br>
+                <div class="formulario__grupo" id=""grupo__email"">
+                    <br><label class="label" for="Email">Email:</label><br>
+                    <input id="correo" type="correo" value="" required>
+                </div>
+
+                <br>
+
+                <div class="formulario__grupo" id="grupo__password">
+                    <br><label class="label" for="Contraseña">Password:</label><br>
+                    <input id="password" type="password" value="" required>
+                </div>
+            
+                <br>
+
+                <div class="formulario__grupo" id="grupo_password2">
+                    <br><label class="label" for="Contraseña">Repite Password:</label><br>
+                    <input id="password2" type="password" value="" required>
+                </div>
+            
+                <br><br>
+            
+                <button class="boton_entrar" type="submit" value="Entrar">ENVIAR</button>
            
-        </form>
-    </main>
-</body>
+                <script src="app.js"></script>
+
+            </form>
+        </main>
+    </body>
 </html>
