@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>FutCOLL - Registrarte</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="./style.css">
     </head>
     <body>
         <header>
@@ -38,38 +38,45 @@
             </nav>
         </header> 
         <main class="mainForm">
-            <form action="inicioSesion.html">
-                <h2><center>Registrase</center></h2>
-                <div class="formulario__grupo" id="grupo_nombre">
+            <form action="inicioSesion.html" id="formulario">
+
+                <h2><center>Registrarse</center></h2>
+
+                <div class="formulario__grupo" id="grupo__nombre">
                     <br><label class="label" for="Email">Nombre:</label><br>
-                    <input id="nombre" type="text" value="" required>
+                    <input class="formulario__input" id="nombre" name="nombre" type="text" value="" required>
+                    <p class="formulario__input-error">El nombre es incorrecto. <br> No puede usar ni numeros ni símbolos.</p>
                 </div>
 
                 <br>
 
-                <div class="formulario__grupo" id="grupo_apellidos">
+                <div class="formulario__grupo" id="grupo__apellidos">
                     <br><label class="label" for="Contraseña">Apellidos:</label><br>
-                    <input id="apellido" type="text" value="" required>
+                    <input class="formulario__input" id="apellido" name="apellidos" type="text" value="" required>
+                    <p class="formulario__input-error">El apellido es incorrecto. <br> No puede usar ni numeros ni símbolos.</p>
                 </div>
 
                 <br>
-                <div class="formulario__grupo" id=""grupo__email"">
+                <div class="formulario__grupo" id="grupo__email">
                     <br><label class="label" for="Email">Email:</label><br>
-                    <input id="correo" type="correo" value="" required>
+                    <input class="formulario__input" id="email" name="email" type="correo" value="" required>
+                    <p class="formulario__input-error">El dirección correo es incorrecto. <br> Debe usar una dirección de correo valida.</p>
                 </div>
 
                 <br>
 
                 <div class="formulario__grupo" id="grupo__password">
                     <br><label class="label" for="Contraseña">Password:</label><br>
-                    <input id="password" type="password" value="" required>
+                    <input class="formulario__input" id="password" type="password" name="password" value="" required>
+                    <p class="formulario__input-error">La contraseña es incorrecta. <br> Debe contener al menos, una mayúscula, un número y un símbolo. </p>
                 </div>
             
                 <br>
 
-                <div class="formulario__grupo" id="grupo_password2">
+                <div class="formulario__grupo" id="grupo__password2">
                     <br><label class="label" for="Contraseña">Repite Password:</label><br>
-                    <input id="password2" type="password" value="" required>
+                    <input class="formulario__input" id="password2" type="password" name="password2" value="" required>
+                    <p class="formulario__input-error">La contraseña es incorrecta. <br> Debe coincidir la contraseña con la anterior.</p>
                 </div>
             
                 <br><br>

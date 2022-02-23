@@ -6,13 +6,13 @@ const expresiones = {
 	nombre: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, 
     apellidos: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, //Solo permite letras para el apellido
 	password: /^(?=(?:.*\d){1})(?=(?:.*[A-Z]){1})(?=(?:.*[a-z]){1})(?=(?:.*[@$?¡\-_]){1})\S{8,16}$/, //Obliga a tener alemnos una mayuscula, un numero, y un caracter especial.
-	correo: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,	//Obliga a poner el "@" y .algo"								  
+	email: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,	//Obliga a poner el "@" y .algo"								  
 }
 
 const campos = {
 	nombre: false,
 	apellidos: false,
-	correo: false,
+	email: false,
 	password: false
 
 }
@@ -27,12 +27,12 @@ const validarFormulario = (e) =>{
 		case "apellidos":
 			validarCampo(expresiones.apellidos, e.target, 'apellidos');
 		break;
-		case "correo":
-			validarCampo(expresiones.correo, e.target, 'correo');
+		case "email":
+			validarCampo(expresiones.email, e.target, 'email');
 		break;
 		case "password":
 			validarCampo(expresiones.password, e.target, 'password');
-						validarPassword2();
+			validarPassword2();
 		case "password2":
 			validarPassword2();
 		break;
@@ -79,11 +79,10 @@ inputs.forEach((input) => {
 });
 
 
-formulario.addEventListener('submit', (e) => {
-e.preventDefault();
-if(campos.nombre && campos.apellidos && campos.correo && campos.password ){
-formulario.reset();
-
-}
+	formulario.addEventListener('submit', (e) => {
+		e.preventDefault();
+		if(campos.nombre && campos.apellidos && campos.email && campos.password ){
+			formulario.reset();
+		}
 
 });

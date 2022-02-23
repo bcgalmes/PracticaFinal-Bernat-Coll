@@ -42,16 +42,23 @@
         </nav>
     </header> 
       <main class="mainForm">
-        <form action="zonaVip.html">
+        <form action="zonaVip.html" id="formulario">
             <h2><center>Iniciar Sesion</center></h2>
-            <br><label class="label" for="Email">Email:</label>
-            <input id="email" type="email" value="" required>
-            <br>
-            <br><label class="label" for="Contraseña">Password:</label>
-            <input id="pass" type="password" value="" required>
-            <br><br>
+            <div class="formulario__grupo" id="grupo__email">
+                <br><label class="label" for="Email">Email:</label><br>
+                <input class="formulario__input" id="email" name="email" type="correo" value="" required>
+                <p class="formulario__input-error">El direccion de correo es incorrecto. <br> Debe usar una dirección de correo valida.</p>
+            </div>
+
+            <div class="formulario__grupo" id="grupo__password">
+                <br><label class="label" for="Contraseña">Password:</label><br>
+                <input class="formulario__input" id="password" type="password" name="password" value="" required>
+                <p class="formulario__input-error">La contraseña es incorrecta. <br> Debe ser la contraseña asociada a esa dirección de correo.</p>
+            </div>
+
             <button class="boton_entrar" value="Entrar">ENTRAR</button>
             <a class="link_registrar" href="registrarse.html">REGISTRARSE</a> 
+            <script src="app.js"></script>
         </form>
       </main>     
 </body>
