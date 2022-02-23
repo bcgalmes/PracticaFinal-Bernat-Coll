@@ -36,7 +36,7 @@ label.boton{
     cursor: pointer;
 }
 
-ul.menu {
+ul.menu{
     display: none;
 }
 
@@ -53,7 +53,7 @@ form{
     justify-content: center;
 }
 
-input:checked ~ ul.menu {
+input:checked ~ ul.menu{
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -129,27 +129,27 @@ picture img{
     width: 100%;
 }
 
-.formulario__input-error {
+.formulario__input-error{
     font-size: 12px;
     text-align: center;
     margin-bottom: 0;
     display: none;
 }
 
-.formulario__input-error-activo {
+.formulario__input-error-activo{
 display: block;
 }
 
 
-.formulario__grupo-incorrecto .formulario__label {
+.formulario__grupo-incorrecto .formulario__label{
 color: #bb2929;
 }
 
-.formulario__grupo-incorrecto .formulario__validacion-estado {
+.formulario__grupo-incorrecto .formulario__validacion-estado{
 color: #bb2929;
 opacity: 1;
 }
 
-.formulario__grupo-incorrecto .formulario__input {
+.formulario__grupo-incorrecto .formulario__input{
 border: 3px solid #bb2929;
 }
